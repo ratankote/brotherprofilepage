@@ -2,17 +2,13 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/profile-2.png";
+import boy from "../../img/kish.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import crown from "../../img/Krx.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -28,21 +24,21 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Ratan kote</span>
+          <span>Krishna kote</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            Pharmacist with 4+ years of experience in using strong interpersonal skills and 
+            extensive medication knowledge to help patients with their need.
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        {/* <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
-        </Link>
+        </Link> */}
         {/* social icons */}
-        <div className="i-icons">
+        {/* <div className="i-icons">
           <img src={Github} alt="" />
-          <a href='https://www.linkedin.com/in/ratan-kote-64a299230/'  target="_blank"><img src={LinkedIn} alt="" /></a>
-          <a href=' https://www.instagram.com/invites/contact/?i=npjr7fvscxff&utm_content=nmnd9zg'  target="_blank"><img src={Instagram} alt="" /></a>
-        </div>
+          <a href='https://www.facebook.com/profile.php?id=100009133581766&mibextid=ZbWKwL'  target="_blank"><img src={Facebook} alt="" /></a>
+          <a href=' https://www.instagram.com/krish_kote?igshid=YmMyMTA2M2Y='  target="_blank"><img src={Instagram} alt="" /></a>
+        </div> */}
       </div>
       {/* right image side */}
       <div className="i-right">
@@ -60,22 +56,22 @@ const Intro = () => {
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "48%" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="i am a" text2="Pharmacist" />
         </motion.div>
 
         {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "4rem" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Registered by  " text2="(KPCRPWT)" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
